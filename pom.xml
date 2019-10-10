@@ -13,6 +13,7 @@
         <module>kuanggou-plat-parent</module>
         <module>kuanggou-basic</module>
         <module>kuanggou-zuul</module>
+        <module>kuanggou-config-server</module>
     </modules>
 
 

@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="basic-util" />
+        <module name="kuanggou-config-server" />
         <module name="kuanggou-eureka" />
         <module name="kuanggou-zuul" />
         <module name="plat-interface" />
@@ -16,6 +17,7 @@
     <bytecodeTargetLevel>
       <module name="basic-util" target="1.8" />
       <module name="kuanggou-basic" target="1.8" />
+      <module name="kuanggou-config-server" target="1.8" />
       <module name="kuanggou-eureka" target="1.8" />
       <module name="kuanggou-parent" target="1.8" />
       <module name="kuanggou-plat-parent" target="1.8" />
