@@ -22,7 +22,7 @@ public class LoginController {
     @PostMapping("/login")
     public AjaxResult login(@RequestBody User user){
         if("admin".equals(user.getUsername())&&"admin".equals(user.getPassword())){
-            return AjaxResult.me().setSuccess(true).setMessage("登录成功!");
+            return AjaxResult.me().setSuccess(true).setMessage("登录成功!").setObject(user);
         }
         return AjaxResult.me().setSuccess(false).setMessage("登录失败!");
     }
