@@ -1,10 +1,8 @@
 package cn.itsource.kuanggou.controller;
 
-import cn.itsource.kuanggou.User;
 import cn.itsource.kuanggou.util.AjaxResult;
+import cn.itsource.kuanggou.User;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiImplicitParam;
-import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

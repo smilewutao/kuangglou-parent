@@ -6,24 +6,33 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="basic-generate" />
         <module name="basic-util" />
         <module name="kuanggou-config-server" />
         <module name="kuanggou-eureka" />
         <module name="kuanggou-zuul" />
         <module name="plat-interface" />
         <module name="plat-service" />
+        <module name="product-interface" />
+        <module name="product-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="basic-generate" target="1.8" />
+      <module name="basic-generator" target="1.8" />
       <module name="basic-util" target="1.8" />
       <module name="kuanggou-basic" target="1.8" />
       <module name="kuanggou-config-server" target="1.8" />
       <module name="kuanggou-eureka" target="1.8" />
       <module name="kuanggou-parent" target="1.8" />
       <module name="kuanggou-plat-parent" target="1.8" />
+      <module name="kuanggou-product" target="1.8" />
+      <module name="kuanggou-product-parent" target="1.8" />
       <module name="kuanggou-zuul" target="1.8" />
       <module name="plat-interface" target="1.8" />
       <module name="plat-service" target="1.8" />
+      <module name="product-interface" target="1.8" />
+      <module name="product-service" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

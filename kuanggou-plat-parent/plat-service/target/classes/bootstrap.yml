@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      name: application-plat
+      profile: dev  # 环境
+      discovery:
+        service-id:  KAUNGGOU-CONFIG
+        enabled: true # 开启
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://root:root@localhost:8761/eureka/

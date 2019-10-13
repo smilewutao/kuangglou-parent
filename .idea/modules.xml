@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/kuanggou-basic/basic-generate/basic-generate.iml" filepath="$PROJECT_DIR$/kuanggou-basic/basic-generate/basic-generate.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-basic/basic-util/basic-util.iml" filepath="$PROJECT_DIR$/kuanggou-basic/basic-util/basic-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-basic/kuanggou-basic.iml" filepath="$PROJECT_DIR$/kuanggou-basic/kuanggou-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-config-server/kuanggou-config-server.iml" filepath="$PROJECT_DIR$/kuanggou-config-server/kuanggou-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-eureka/kuanggou-eureka.iml" filepath="$PROJECT_DIR$/kuanggou-eureka/kuanggou-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-parent.iml" filepath="$PROJECT_DIR$/kuanggou-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-plat-parent/kuanggou-plat-parent.iml" filepath="$PROJECT_DIR$/kuanggou-plat-parent/kuanggou-plat-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kuanggou-product-parent/kuanggou-product-parent.iml" filepath="$PROJECT_DIR$/kuanggou-product-parent/kuanggou-product-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-zuul/kuanggou-zuul.iml" filepath="$PROJECT_DIR$/kuanggou-zuul/kuanggou-zuul.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-plat-parent/plat-interface/plat-interface.iml" filepath="$PROJECT_DIR$/kuanggou-plat-parent/plat-interface/plat-interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-plat-parent/plat-service/plat-service.iml" filepath="$PROJECT_DIR$/kuanggou-plat-parent/plat-service/plat-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/product-interface.iml" filepath="$PROJECT_DIR$/kuanggou-product-parent/product-interface/product-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/product-service.iml" filepath="$PROJECT_DIR$/kuanggou-product-parent/product-service/product-service.iml" />
     </modules>
   </component>
 </project>
