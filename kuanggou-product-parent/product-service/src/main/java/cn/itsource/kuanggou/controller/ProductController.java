@@ -1,12 +1,13 @@
 package cn.itsource.kuanggou.controller;
 
-import cn.itsource.kuanggou.service.IProductService;
+
 import cn.itsource.kuanggou.domain.Product;
 import cn.itsource.kuanggou.query.ProductQuery;
+import cn.itsource.kuanggou.service.IProductService;
 import cn.itsource.kuanggou.util.AjaxResult;
 import cn.itsource.kuanggou.util.PageList;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -3,6 +3,8 @@ package cn.itsource.kuanggou.service;
 import cn.itsource.kuanggou.domain.ProductType;
 import com.baomidou.mybatisplus.extension.service.IService;
 
+import java.util.List;
+
 /**
  * <p>
  * 商品目录 服务类
@@ -13,4 +15,9 @@ import com.baomidou.mybatisplus.extension.service.IService;
  */
 public interface IProductTypeService extends IService<ProductType> {
 
+    /**
+     * 加载树
+     * @return
+     */
+    List<ProductType> loadTypeTree();
 }

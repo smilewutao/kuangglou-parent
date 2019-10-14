@@ -1,12 +1,14 @@
 package cn.itsource.kuanggou.controller;
 
-import cn.itsource.kuanggou.service.IProductTypeService;
+
+
 import cn.itsource.kuanggou.domain.ProductType;
 import cn.itsource.kuanggou.query.ProductTypeQuery;
+import cn.itsource.kuanggou.service.IProductTypeService;
 import cn.itsource.kuanggou.util.AjaxResult;
 import cn.itsource.kuanggou.util.PageList;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -85,5 +87,14 @@ public class ProductTypeController {
         Page<ProductType> page = new Page<ProductType>(query.getPage(),query.getRows());
         IPage<ProductType> ipage = productTypeService.page(page);
         return new PageList<ProductType>(ipage.getTotal(),ipage.getRecords());
+    }
+
+    /**
+     * 加载类型树
+     * @return
+     */
+    @RequestMapping(value = "/loadTypeTree",method = RequestMethod.GET)
+    public List<ProductType> loadTypeTree(){
+        return productTypeService.loadTypeTree();
     }
 }

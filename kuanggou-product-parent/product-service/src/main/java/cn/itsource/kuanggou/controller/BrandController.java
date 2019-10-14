@@ -1,12 +1,12 @@
 package cn.itsource.kuanggou.controller;
 
+
 import cn.itsource.kuanggou.domain.Brand;
 import cn.itsource.kuanggou.query.BrandQuery;
 import cn.itsource.kuanggou.service.IBrandService;
 import cn.itsource.kuanggou.util.AjaxResult;
 import cn.itsource.kuanggou.util.PageList;
-import com.baomidou.mybatisplus.core.metadata.IPage;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import cn.itsource.kuanggou.util.StrUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/brand")
-public class BrandController {
+public class  BrandController {
     @Autowired
     public IBrandService brandService;
 
@@ -54,6 +54,23 @@ public class BrandController {
         }
     }
 
+    /**
+     * 批量删除对象信息
+     * @param ids
+     * @return
+     */
+    @RequestMapping(value="/deleteBatch",method=RequestMethod.DELETE)
+    public AjaxResult delete(@RequestParam("ids") String ids){
+        try {
+            List<Long> idList = StrUtils.splitStr2LongArr(ids);
+            brandService.removeByIds(idList);
+            return AjaxResult.me();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setMessage("删除对象失败！"+e.getMessage());
+        }
+    }
+
     //获取
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public Brand get(@PathVariable("id") Long id)
@@ -82,8 +99,6 @@ public class BrandController {
     @RequestMapping(value = "/json",method = RequestMethod.POST)
     public PageList<Brand> json(@RequestBody BrandQuery query)
     {
-        Page<Brand> page = new Page<Brand>(query.getPage(),query.getRows());
-         IPage<Brand> iPage = brandService.page(page);
-         return new PageList<Brand>(iPage.getTotal(),iPage.getRecords());
+       return brandService.queryPage(query);
     }
 }

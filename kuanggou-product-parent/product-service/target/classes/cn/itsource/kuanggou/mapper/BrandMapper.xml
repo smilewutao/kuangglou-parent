@@ -14,6 +14,30 @@
         <result column="product_type_id" property="productTypeId" />
         <result column="sortIndex" property="sortIndex" />
         <result column="logo" property="logo" />
+        <!--association 对象的映射-->
+        <association property="productType" javaType="cn.itsource.kuanggou.domain.ProductType">
+            <id column="typeid" property="id"/>
+            <result column="typename" property="name"/>
+        </association>
     </resultMap>
+
+    <select id="queryPage" resultMap="BaseResultMap">
+        select tb.*,tp.id typeid,tp.name typename
+        from t_brand tb
+        left join t_product_type tp on tb.product_type_id = tp.id
+        <include refid="whereSql"></include>
+    </select>
+    <!--查询条件-->
+    <sql id="whereSql">
+        <where>
+            <if test="#{query.keyword}!=null">
+                and (
+                tb.name like concat('%',#{query.keyword},'%')
+                or
+                tb.englishName like concat('%',#{query.keyword},'%')
+                )
+            </if>
+        </where>
+    </sql>
 
 </mapper>
