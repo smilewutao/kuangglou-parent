@@ -16,6 +16,7 @@
         <module>kuanggou-config-server</module>
         <module>kuanggou-product-parent</module>
         <module>kuanggou-product-parent</module>
+        <module>kuanggou-common-parent</module>
     </modules>
 
 

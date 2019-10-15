@@ -8,6 +8,8 @@
         <outputRelativeToContentRoot value="true" />
         <module name="basic-generate" />
         <module name="basic-util" />
+        <module name="common-interface" />
+        <module name="common-service" />
         <module name="kuanggou-config-server" />
         <module name="kuanggou-eureka" />
         <module name="kuanggou-zuul" />
@@ -21,7 +23,10 @@
       <module name="basic-generate" target="1.8" />
       <module name="basic-generator" target="1.8" />
       <module name="basic-util" target="1.8" />
+      <module name="common-interface" target="1.8" />
+      <module name="common-service" target="1.8" />
       <module name="kuanggou-basic" target="1.8" />
+      <module name="kuanggou-common-parent" target="1.8" />
       <module name="kuanggou-config-server" target="1.8" />
       <module name="kuanggou-eureka" target="1.8" />
       <module name="kuanggou-parent" target="1.8" />

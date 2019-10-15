@@ -4,7 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/kuanggou-basic/basic-generate/basic-generate.iml" filepath="$PROJECT_DIR$/kuanggou-basic/basic-generate/basic-generate.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-basic/basic-util/basic-util.iml" filepath="$PROJECT_DIR$/kuanggou-basic/basic-util/basic-util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kuanggou-common-parent/common-interface/common-interface.iml" filepath="$PROJECT_DIR$/kuanggou-common-parent/common-interface/common-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/common-service.iml" filepath="$PROJECT_DIR$/kuanggou-common-parent/common-service/common-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-basic/kuanggou-basic.iml" filepath="$PROJECT_DIR$/kuanggou-basic/kuanggou-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kuanggou-common-parent/kuanggou-common-parent.iml" filepath="$PROJECT_DIR$/kuanggou-common-parent/kuanggou-common-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-config-server/kuanggou-config-server.iml" filepath="$PROJECT_DIR$/kuanggou-config-server/kuanggou-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-eureka/kuanggou-eureka.iml" filepath="$PROJECT_DIR$/kuanggou-eureka/kuanggou-eureka.iml" />
       <module fileurl="file://$PROJECT_DIR$/kuanggou-parent.iml" filepath="$PROJECT_DIR$/kuanggou-parent.iml" />
