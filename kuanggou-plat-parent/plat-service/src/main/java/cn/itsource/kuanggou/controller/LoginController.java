@@ -23,7 +23,7 @@ public class LoginController {
         String name = "admin";
         String password = "admin";
         if(name.equals(user.getUsername())&&password.equals(user.getPassword())){
-            return AjaxResult.me().setSuccess(true).setMessage("登录成功!").setObject(user);
+            return AjaxResult.me().setSuccess(true).setMessage("登录成功!").setRestObj(user);
         }
         return AjaxResult.me().setSuccess(false).setMessage("登录失败!");
     }

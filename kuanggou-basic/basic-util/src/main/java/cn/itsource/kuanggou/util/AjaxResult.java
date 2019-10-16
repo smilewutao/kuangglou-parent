@@ -7,7 +7,7 @@ public class AjaxResult {
 
     private Boolean success = true;
     private String message = "操作成功！";
-    private Object object;
+    private Object restObj;
 
     public static AjaxResult me(){
         return new AjaxResult();
@@ -31,12 +31,12 @@ public class AjaxResult {
         return this;
     }
 
-    public Object getObject() {
-        return object;
+    public Object getRestObj() {
+        return restObj;
     }
 
-    public AjaxResult setObject(Object object) {
-        this.object = object;
+    public AjaxResult setRestObj(Object restObj) {
+        this.restObj = restObj;
         return this;
     }
 }

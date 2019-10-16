@@ -2,65 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19bcfba2-0629-4c7a-8a30-d58d8ebb9ead" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_47.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_9_5_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_9_5_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_java8_9_5_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_9_5_1.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_0_1_RELEASE.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-interface/common-interface.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-interface/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/RedisClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/StaticPageClient.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/impl/RedisClientImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/common-service.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/CommonApplication.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/config/Swagger2.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/RedisController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/StaticPageController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/RedisUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/VelocityUtils.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/bootstrap.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/kuanggou-common-parent.iml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/pom.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/home.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/home/common-footer.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/home/common-header-top.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/home/common-header.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/home/common-link.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/home/common-nav.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/home/common-right-sidebar.vm" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/product.type.vm" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_csource_fastdfs_fastdfs_1_2.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/FileController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/FastDfsApiOpr.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/fdfs_client.conf" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/AjaxResult.java" afterPath="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/AjaxResult.java" />
+      <change beforePath="$PROJECT_DIR$/kuanggou-basic/basic-util/target/classes/cn/itsource/kuanggou/util/AjaxResult.class" afterPath="$PROJECT_DIR$/kuanggou-basic/basic-util/target/classes/cn/itsource/kuanggou/util/AjaxResult.class" />
+      <change beforePath="$PROJECT_DIR$/kuanggou-common-parent/common-service/common-service.iml" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/common-service.iml" />
+      <change beforePath="$PROJECT_DIR$/kuanggou-common-parent/common-service/pom.xml" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/bootstrap.yml" />
       <change beforePath="$PROJECT_DIR$/kuanggou-plat-parent/plat-service/src/main/java/cn/itsource/kuanggou/controller/LoginController.java" afterPath="$PROJECT_DIR$/kuanggou-plat-parent/plat-service/src/main/java/cn/itsource/kuanggou/controller/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/pom.xml" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/product-service.iml" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/product-service.iml" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/ProductApplication.java" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/ProductApplication.java" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/ProductTypeController.java" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/ProductTypeController.java" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IProductTypeService.java" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IProductTypeService.java" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductServiceImpl.java" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductTypeServiceImpl.java" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductTypeServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/ProductApplication.class" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/ProductApplication.class" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/controller/ProductTypeController.class" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/controller/ProductTypeController.class" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/service/IProductTypeService.class" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/service/IProductTypeService.class" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/service/impl/ProductTypeServiceImpl.class" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/service/impl/ProductTypeServiceImpl.class" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/ZuulApplication.java" afterPath="$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/ZuulApplication.java" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/config/DocumentationConfig.java" afterPath="$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/config/DocumentationConfig.java" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-zuul/src/main/resources/bootstrap.yml" afterPath="$PROJECT_DIR$/kuanggou-zuul/src/main/resources/bootstrap.yml" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-zuul/target/classes/bootstrap.yml" afterPath="$PROJECT_DIR$/kuanggou-zuul/target/classes/bootstrap.yml" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-zuul/target/classes/cn/itsource/kuanggou/ZuulApplication.class" afterPath="$PROJECT_DIR$/kuanggou-zuul/target/classes/cn/itsource/kuanggou/ZuulApplication.class" />
-      <change beforePath="$PROJECT_DIR$/kuanggou-zuul/target/classes/cn/itsource/kuanggou/config/DocumentationConfig.class" afterPath="$PROJECT_DIR$/kuanggou-zuul/target/classes/cn/itsource/kuanggou/config/DocumentationConfig.class" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/kuanggou-plat-parent/plat-service/target/classes/cn/itsource/kuanggou/controller/LoginController.class" afterPath="$PROJECT_DIR$/kuanggou-plat-parent/plat-service/target/classes/cn/itsource/kuanggou/controller/LoginController.class" />
+      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/BrandServiceImpl.java" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/BrandServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/service/impl/BrandServiceImpl.class" afterPath="$PROJECT_DIR$/kuanggou-product-parent/product-service/target/classes/cn/itsource/kuanggou/service/impl/BrandServiceImpl.class" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -89,7 +44,40 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ProductTypeServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductTypeServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="122">
+              <caret line="67" column="46" lean-forward="true" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FileController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/FileController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1026">
+              <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FastDfsApiOpr.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/FastDfsApiOpr.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-546">
+              <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -111,10 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/util/PropertiesHelper.java" />
-        <option value="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/PropertiesHelper.java" />
-        <option value="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/PropertiesHelper.java" />
-        <option value="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/StrUtils.java" />
         <option value="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/query/BaseQuery.java" />
         <option value="$PROJECT_DIR$/kuanggou-basic/basic-generate/src/main/resources/templates/query.java.vm" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/query/BrandQuery.java" />
@@ -125,7 +109,6 @@
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/ProductController.java" />
         <option value="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/PageList.java" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IBrandService.java" />
-        <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/BrandServiceImpl.java" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/cn/itsource/kuanggou/mapper/BrandMapper.xml" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/mapper/BrandMapper.java" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/domain/Brand.java" />
@@ -138,10 +121,8 @@
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/BrandController.java" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/domain/ProductType.java" />
         <option value="$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/config/GlobalCorsConfig.java" />
-        <option value="$PROJECT_DIR$/kuanggou-plat-parent/plat-service/src/main/java/cn/itsource/kuanggou/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/kuanggou-common-parent/pom.xml" />
         <option value="$PROJECT_DIR$/kuanggou-common-parent/common-interface/pom.xml" />
-        <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/CommonApplication.java" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductServiceImpl.java" />
         <option value="$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/impl/RedisClientImpl.java" />
@@ -153,7 +134,6 @@
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/ProductApplication.java" />
         <option value="$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/ZuulApplication.java" />
         <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/StaticPageController.java" />
-        <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/pom.xml" />
         <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/VelocityUtils.java" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/ProductTypeController.java" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IProductTypeService.java" />
@@ -162,6 +142,14 @@
         <option value="$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/StaticPageClient.java" />
         <option value="$PROJECT_DIR$/kuanggou-zuul/src/main/resources/bootstrap.yml" />
         <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductTypeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/AjaxResult.java" />
+        <option value="$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/BrandServiceImpl.java" />
+        <option value="$PROJECT_DIR$/kuanggou-plat-parent/plat-service/src/main/java/cn/itsource/kuanggou/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/FastDfsApiOpr.java" />
+        <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/pom.xml" />
+        <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/fdfs_client.conf" />
+        <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/FileController.java" />
+        <option value="$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/bootstrap.yml" />
       </list>
     </option>
   </component>
@@ -227,6 +215,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -237,60 +229,34 @@
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-common-parent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-config-server" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-common-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-common-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-config-server" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-eureka" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-eureka" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-common-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-common-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -298,7 +264,8 @@
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
-              <item name="kuanggou-eureka" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-common-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-service" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -307,7 +274,69 @@
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-common-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-common-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="common-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
               <item name="kuanggou-plat-parent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-plat-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="plat-interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-plat-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="plat-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-plat-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="plat-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-plat-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="plat-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-plat-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="plat-interface" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -352,6 +381,17 @@
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
               <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-plat-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="plat-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
               <item name="kuanggou-product-parent" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -393,6 +433,40 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-product-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-product-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="kuangglou-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou-product-parent" type="462c0819:PsiDirectoryNode" />
+              <item name="product-service" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="kuanggou" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="kuangglou-parent" type="b2602c69:ProjectViewProjectNode" />
@@ -433,10 +507,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -452,19 +522,19 @@
     <property name="RequestMappingsPanelOrder2" value="2" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-product-parent\product-service\src\main\resources\template\home" />
-      <recent name="E:\eee\kuanggou-parent\kuanggou-plat-parent\plat-service\src\main\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-common-parent\common-service\src\main\resources" />
+      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-common-parent\common-service\src\main\java\cn\itsource\kuanggou\util" />
+      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-common-parent\common-service\src\main\java\cn\itsource\kuanggou\controller" />
+      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-product-parent\product-service\src\main\resources\template" />
+      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-common-parent\common-interface\src\main\java\cn\itsource\kuanggou\client" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.itsource.kuanggou.config" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-product-parent\product-service\src\main\resources\template" />
-      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-common-parent\common-interface\src\main\java\cn\itsource\kuanggou\client" />
-      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-common-parent\common-service\src\main\java\cn\itsource\kuanggou\util" />
-      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-common-parent\common-service\src\main\java\cn\itsource\kuanggou\controller" />
-      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-product-parent\product-service\src\test\java\cn\itsource\kuanggou\mapper" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\eee\kuangglou-parent\kuangglou-parent\kuanggou-product-parent\product-service\src\main\resources\template\home" />
+      <recent name="E:\eee\kuanggou-parent\kuanggou-plat-parent\plat-service\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -629,6 +699,12 @@
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
     </configuration>
+    <configuration name="CommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itsource.kuanggou.CommonApplication" />
+      <module name="common-service" />
+      <envs />
+    </configuration>
     <configuration name="EurekaApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="cn.itsource.kuanggou.util.EurekaApplication" />
@@ -722,7 +798,7 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="15">
+    <list size="16">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.EurekaApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.PlatApplication" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.ZuulApplication" />
@@ -733,11 +809,12 @@
       <item index="7" class="java.lang.String" itemvalue="Spring Boot.PlatApplication (1)" />
       <item index="8" class="java.lang.String" itemvalue="Spring Boot.EurekaApplication (1)" />
       <item index="9" class="java.lang.String" itemvalue="Spring Boot.ServerApplication (1)" />
-      <item index="10" class="java.lang.String" itemvalue="Application.EurekaApplication" />
-      <item index="11" class="java.lang.String" itemvalue="Application.ZuulApplication" />
-      <item index="12" class="java.lang.String" itemvalue="Application.ServerApplication" />
-      <item index="13" class="java.lang.String" itemvalue="Application.ProductApplication" />
-      <item index="14" class="java.lang.String" itemvalue="JUnit.BrandMapperTest.queryPage" />
+      <item index="10" class="java.lang.String" itemvalue="Spring Boot.CommonApplication" />
+      <item index="11" class="java.lang.String" itemvalue="Application.EurekaApplication" />
+      <item index="12" class="java.lang.String" itemvalue="Application.ZuulApplication" />
+      <item index="13" class="java.lang.String" itemvalue="Application.ServerApplication" />
+      <item index="14" class="java.lang.String" itemvalue="Application.ProductApplication" />
+      <item index="15" class="java.lang.String" itemvalue="JUnit.BrandMapperTest.queryPage" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -779,6 +856,10 @@
       <workItem from="1570947335271" duration="2966000" />
       <workItem from="1570953383049" duration="15940000" />
       <workItem from="1571022003117" duration="24337000" />
+      <workItem from="1571152221547" duration="3479000" />
+      <workItem from="1571192270541" duration="12754000" />
+      <workItem from="1571214532681" duration="116000" />
+      <workItem from="1571215382912" duration="3258000" />
     </task>
     <servers />
   </component>
@@ -788,10 +869,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89515000" />
+    <option name="totallyTimeSpent" value="109122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.61337686" sideWeight="0.5121029" order="7" side_tool="true" content_ui="tabs" />
@@ -812,10 +894,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.64763457" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43066883" sideWeight="0.48789713" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32789558" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4877651" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
@@ -837,336 +919,78 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/query/ProductTypeQuery.java">
+    <entry file="file://$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/query/BaseQuery.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/pom.xml">
+    <entry file="file://$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/AjaxResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="24" column="23" lean-forward="false" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/test/java/cn/itsource/kuanggou/mapper/BrandMapperTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/cn/itsource/kuanggou/mapper/BrandMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="26" column="53" lean-forward="false" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-          <folding>
-            <marker date="1570958216115" expanded="true" signature="1221:1352" ph="select tb.*,... t_brand" />
-          </folding>
+        <state relative-caret-position="798">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/StrUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
+        <state relative-caret-position="168">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/domain/Product.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/domain/ProductType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-763">
-          <caret line="38" column="29" lean-forward="true" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/swagger/swagger-annotations/1.5.20/swagger-annotations-1.5.20.jar!/io/swagger/annotations/Api.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="16" column="18" lean-forward="false" selection-start-line="16" selection-start-column="18" selection-end-line="16" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-plat-parent/plat-service/src/main/java/cn/itsource/kuanggou/config/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="31" column="12" lean-forward="true" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/config/GlobalCorsConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="22" column="35" lean-forward="false" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/mapper/BrandMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/mapper/ProductMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IBrandService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/mapper/ProductTypeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/ProductController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/BrandController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="27" column="13" lean-forward="false" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-zuul/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="19" column="28" lean-forward="true" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-zuul/src/main/resources/application_bak.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-config-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="18" column="22" lean-forward="true" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-plat-parent/plat-service/src/main/java/cn/itsource/kuanggou/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-plat-parent/plat-service/target/classes/cn/itsource/kuanggou/controller/LoginController.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/bootstrap.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="10" lean-forward="true" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/BrandServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="22" column="73" lean-forward="false" selection-start-line="22" selection-start-column="73" selection-end-line="22" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/bootstrap.yml">
+    <entry file="file://$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/BitStatesUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-          <folding />
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/CommonApplication.java">
+    <entry file="file://$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/ClassUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="60" lean-forward="false" selection-start-line="9" selection-start-column="60" selection-end-line="9" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#252#253#0" expanded="false" />
-            <element signature="e#319#320#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/config/DocumentationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="24" column="56" lean-forward="false" selection-start-line="24" selection-start-column="56" selection-end-line="24" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/config/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/config/Swagger2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="38" column="32" lean-forward="false" selection-start-line="38" selection-start-column="32" selection-end-line="38" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/RedisUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-interface/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/RedisController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="33" column="10" lean-forward="false" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#610#611#0" expanded="false" />
-            <element signature="e#661#662#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="70" column="21" lean-forward="false" selection-start-line="70" selection-start-column="21" selection-end-line="70" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/VelocityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1344">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/ProductTypeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="107" column="37" lean-forward="false" selection-start-line="107" selection-start-column="37" selection-end-line="107" selection-end-column="37" />
-          <folding>
-            <element signature="e#2768#2769#0" expanded="false" />
-            <element signature="e#2824#2825#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IProductTypeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/StaticPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
+        <state relative-caret-position="168">
           <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/CodeGenerateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/GlobalSetting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-basic/basic-util/src/main/java/cn/itsource/kuanggou/util/PageList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/RedisClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/StaticPageClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
         </state>
       </provider>
     </entry>
@@ -1174,15 +998,132 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="9" column="42" lean-forward="false" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/home/common-footer.vm">
+    <entry file="file://$PROJECT_DIR$/kuanggou-plat-parent/plat-interface/src/main/java/cn/itsource/kuanggou/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/domain/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/query/ProductQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/query/ProductTypeQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/domain/ProductType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-784">
+          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/cn/itsource/kuanggou/mapper/ProductTypeMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/domain/Brand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-595">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-interface/src/main/java/cn/itsource/kuanggou/query/BrandQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/ProductController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1050">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/ProductTypeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="96" column="43" lean-forward="true" selection-start-line="96" selection-start-column="43" selection-end-line="96" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/mapper/BrandMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/mapper/ProductMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/mapper/ProductTypeMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IProductService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IBrandService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/cn/itsource/kuanggou/mapper/BrandMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="16" column="32" lean-forward="true" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/cn/itsource/kuanggou/mapper/ProductMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1190,43 +1131,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="2" column="30" lean-forward="false" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/RedisClient.java">
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/resources/template/product.type.vm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-interface/src/main/java/cn/itsource/kuanggou/client/StaticPageClient.java">
+    <entry file="file://$PROJECT_DIR$/kuanggou-plat-parent/plat-service/src/main/java/cn/itsource/kuanggou/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="17" column="10" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="441">
+          <caret line="27" column="69" lean-forward="false" selection-start-line="27" selection-start-column="69" selection-end-line="27" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-zuul/src/main/resources/bootstrap.yml">
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/RedisController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <caret line="20" column="14" lean-forward="false" selection-start-line="20" selection-start-column="14" selection-end-line="20" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="77" column="21" lean-forward="true" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductTypeServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/StaticPageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="195" column="7" lean-forward="false" selection-start-line="195" selection-start-column="7" selection-end-line="195" selection-end-column="7" />
+        <state relative-caret-position="122">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/RedisUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/VelocityUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="4" lean-forward="true" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/controller/BrandController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1323">
+          <caret line="99" column="62" lean-forward="true" selection-start-line="99" selection-start-column="62" selection-end-line="99" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/BrandServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="56" column="5" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/CommonApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="8" column="42" lean-forward="false" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#252#253#0" expanded="false" />
+            <element signature="e#319#320#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1243,38 +1237,73 @@
         <state relative-caret-position="168">
           <caret line="10" column="42" lean-forward="false" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
           <folding>
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="false" />
+            <element signature="e#406#407#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kuanggou-plat-parent/plat-service/src/main/java/cn/itsource/kuanggou/PlatApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="189">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/ProductApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+          <folding>
+            <element signature="e#553#554#0" expanded="false" />
+            <element signature="e#621#622#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kuanggou-zuul/src/main/java/cn/itsource/kuanggou/ZuulApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
-          <caret line="11" column="44" lean-forward="true" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
           <folding>
-            <element signature="e#463#464#0" expanded="true" />
+            <element signature="e#398#399#0" expanded="false" />
+            <element signature="e#463#464#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/ProductApplication.java">
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/IProductTypeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="14" column="42" lean-forward="false" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
+        <state relative-caret-position="416">
+          <caret line="23" column="8" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-product-parent/product-service/src/main/java/cn/itsource/kuanggou/service/impl/ProductTypeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="67" column="46" lean-forward="true" selection-start-line="67" selection-start-column="46" selection-end-line="67" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/controller/FileController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="49" column="13" lean-forward="true" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
           <folding>
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#621#622#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kuanggou-common-parent/common-service/src/main/java/cn/itsource/kuanggou/util/FastDfsApiOpr.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-546">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
