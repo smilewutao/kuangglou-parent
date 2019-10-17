@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 import lombok.experimental.Accessors;
 
 /**
@@ -15,11 +16,12 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author wutao
- * @since 2019-10-12
+ * @since 2019-10-17
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
+@ToString
 @TableName("t_product")
 public class Product implements Serializable {
 
@@ -125,5 +127,19 @@ public class Product implements Serializable {
     @TableField("badCommentCount")
     private Integer badCommentCount;
 
+    @TableField("skuProperties")
+    private String skuProperties;
 
+    @TableField("medias")
+    private String medias;
+
+    @TableField("brand")
+    private Brand brand;
+
+    @TableField("productType")
+    private ProductType productType;
+
+
+    @TableField("ext")
+    public ProductExt ext;
 }

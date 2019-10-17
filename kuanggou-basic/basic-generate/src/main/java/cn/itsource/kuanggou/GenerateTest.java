@@ -34,6 +34,7 @@ public class GenerateTest {
         gc.setOutputDir(projectPath + rb.getString("outputDir"));
         gc.setAuthor(rb.getString("author"));
         gc.setOpen(false);
+        gc.setFileOverride(true);
         gc.setBaseResultMap(true);
         mpg.setGlobalConfig(gc);
 
@@ -126,7 +127,7 @@ public class GenerateTest {
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         strategy.setEntityLombokModel(true);
         //生成哪些表的代码
-        strategy.setInclude("t_brand","t_product_type","t_product");
+        strategy.setInclude("t_product");
         strategy.setTablePrefix("t_");
         mpg.setStrategy(strategy);
         mpg.execute();
