@@ -22,7 +22,7 @@ public class FileController {
      * @return
      */
     @PostMapping("/file")
-    public AjaxResult upload(MultipartFile file){
+    public AjaxResult upload(@RequestParam("file") MultipartFile file){
 
         try {
             byte[] content = file.getBytes();//获取文件内容

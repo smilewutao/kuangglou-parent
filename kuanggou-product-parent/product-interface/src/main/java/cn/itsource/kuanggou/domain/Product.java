@@ -133,13 +133,13 @@ public class Product implements Serializable {
     @TableField("medias")
     private String medias;
 
-    @TableField("brand")
+    @TableField(exist=false)
     private Brand brand;
 
-    @TableField("productType")
+    @TableField(exist=false)
     private ProductType productType;
 
 
-    @TableField("ext")
+    @TableField(exist=false)
     public ProductExt ext;
 }

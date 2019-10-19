@@ -1,5 +1,6 @@
 package cn.itsource.kuanggou.controller;
 
+import cn.itsource.kuanggou.domain.Specification;
 import cn.itsource.kuanggou.service.IProductService;
 import cn.itsource.kuanggou.domain.Product;
 import cn.itsource.kuanggou.query.ProductQuery;
@@ -83,5 +84,43 @@ public class ProductController {
     public PageList<Product> json(@RequestBody ProductQuery query)
     {
         return productService.queryPage(query);
+    }
+
+    /**
+     * 根据商品ID查询商品的显示属性
+     * @param productId
+     * @return
+     */
+    @GetMapping("/viewProperties/{productId}")
+    public List<Specification> getViewProperties(@PathVariable("productId") Long productId){
+        return productService.getViewProperties(productId);
+    }
+
+    /**
+     * 保存属性
+     * @param productId
+     * @param viewProperties
+     * @return
+     */
+    @PostMapping("/updateViewProperties")
+    public AjaxResult updateViewProperties(@RequestParam("productId")Long productId,
+                                           @RequestBody List<Specification> viewProperties){
+        try {
+            productService.saveViewProperties(productId,viewProperties);
+            return AjaxResult.me();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return AjaxResult.me().setSuccess(false).setMessage("保存失败！"+e.getMessage());
+        }
+    }
+
+    /**
+     * 根据商品ID查询商品的显示属性
+     * @param productId
+     * @return
+     */
+    @GetMapping("/skuProperties/{productId}")
+    public List<Specification> getSkuProperties(@PathVariable("productId") Long productId){
+        return productService.getSkuProperties(productId);
     }
 }

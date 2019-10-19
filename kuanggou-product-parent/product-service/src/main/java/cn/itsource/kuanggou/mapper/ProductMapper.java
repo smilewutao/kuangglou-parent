@@ -18,6 +18,15 @@ import org.apache.ibatis.annotations.Param;
 public interface ProductMapper extends BaseMapper<Product> {
 
     IPage queryPage(Page page, @Param("query") ProductQuery query);
+
+    /**
+     * 修改显示属性
+     * mapper接口中如果有多个参数需要在sql中获取作为参数
+     * 需要参数绑定，使用@Param注解
+     * @param productId
+     * @param viewProperties
+     */
+    void updateViewProperties(@Param("productId") Long productId,@Param("viewProperties") String viewProperties);
 }
 
 
