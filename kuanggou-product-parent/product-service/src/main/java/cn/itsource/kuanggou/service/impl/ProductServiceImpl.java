@@ -1,12 +1,11 @@
 package cn.itsource.kuanggou.service.impl;
+import cn.itsource.kuanggou.domain.ProductType;
 
 
-import cn.itsource.kuanggou.domain.Product;
-import cn.itsource.kuanggou.domain.ProductExt;
-import cn.itsource.kuanggou.domain.Specification;
-import cn.itsource.kuanggou.mapper.ProductExtMapper;
-import cn.itsource.kuanggou.mapper.ProductMapper;
-import cn.itsource.kuanggou.mapper.SpecificationMapper;
+import cn.itsource.kuanggou.client.ProductDocClient;
+import cn.itsource.kuanggou.client.domain.ProductDoc;
+import cn.itsource.kuanggou.domain.*;
+import cn.itsource.kuanggou.mapper.*;
 import cn.itsource.kuanggou.query.ProductQuery;
 import cn.itsource.kuanggou.service.IProductService;
 import cn.itsource.kuanggou.util.PageList;
@@ -17,11 +16,14 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.apache.commons.lang.StringUtils;
+import org.bouncycastle.util.io.pem.PemObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -39,6 +41,18 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
 
     @Autowired
     private SpecificationMapper specificationMapper;
+
+    @Autowired
+    private SkuMapper skuMapper;
+
+    @Autowired
+    private ProductDocClient client;
+
+    @Autowired
+    private ProductTypeMapper productTypeMapper;
+
+    @Autowired
+    private BrandMapper brandMapper;
 
 
     @Override
@@ -120,5 +134,161 @@ public class ProductServiceImpl extends ServiceImpl<ProductMapper, Product> impl
             specifications = JSONArray.parseArray(skuProperties, Specification.class);
         }
         return specifications;
+    }
+
+    /**
+     * 保存sku
+     * @param productId
+     * @param skuproperties
+     * @param skus
+     */
+    @Override
+    @Transactional
+    public void saveSkuProperties(Long productId, List<Specification> skuproperties, List<Map<String, String>> skus) {
+
+        //修改t_product表中skuProperties
+        String skuPropertiesJSON = JSON.toJSONString(skuproperties);
+        baseMapper.updateSkuProperties(productId, skuPropertiesJSON);
+
+        //维护t_sku表
+
+        //先删除之前
+        skuMapper.delete(new QueryWrapper<Sku>().eq("product_id",productId ));
+        //再添加新的
+        Sku sku = null;
+        for (Map<String, String> skuMap : skus) {
+            sku = new Sku();
+            //从参数中获取数据封装到sku对象中
+            sku.setCreateTime(System.currentTimeMillis());
+            sku.setProductId(productId);
+            StringBuilder sb = new StringBuilder();
+
+            //map遍历
+            for (Map.Entry<String, String> skuEntry : skuMap.entrySet()) {
+                if (!"price".equals(skuEntry.getKey())&&!"store"
+                        .equals(skuEntry.getKey ())&&!"indexs".equals(skuEntry.getKey())){
+
+                    sb.append(skuEntry.getValue());
+
+                }
+            }
+            sku.setSkuName(sb.toString());
+            sku.setPrice(Integer.parseInt(skuMap.get("price")));
+            sku.setAvailableStock(Integer.parseInt(skuMap.get("store")));
+            sku.setIndexs(skuMap.get("indexs"));
+            skuMapper.insert(sku);
+        }
+
+
+    }
+
+    /**
+     * 批量上架
+     * @param idList
+     */
+    @Override
+    public void onSale(List<Long> idList) {
+
+        //修改数据库的商品的statu
+        baseMapper.onSale(idList,System.currentTimeMillis());
+
+        //查询商品信息
+        List<Product> products = baseMapper.selectBatchIds(idList);
+
+        //保存到es中
+        List<ProductDoc> productDocList = products2Docs(products);
+        client.saveBatch(productDocList);
+
+    }
+
+    /**
+     * 批量下架
+     * @param idList
+     */
+    @Override
+    public void offSale(List<Long> idList) {
+
+        //修改数据库的状态
+        baseMapper.offSale(idList,System.currentTimeMillis());
+
+        //删除es中的数据
+        client.deleteBatch(idList);
+
+    }
+
+    /**
+     * 集合的转换
+     * @param products
+     * @return
+     */
+    private List<ProductDoc> products2Docs(List<Product> products) {
+
+        List<ProductDoc> productDocList = new ArrayList<>();
+
+        ProductDoc doc = null;
+        for (Product product : products) {
+            doc = product2Doc(product);
+            productDocList.add(doc);
+        }
+
+        return productDocList;
+    }
+
+    /**
+     * 对象的转换
+     * @param product
+     * @return
+     */
+    private ProductDoc product2Doc(Product product) {
+        ProductDoc doc = new ProductDoc();
+
+        ProductType productType = productTypeMapper.selectById(product.getProductTypeId());
+
+        Brand brand = brandMapper.selectById(product.getBrandId());
+
+
+        doc.setId(product.getId());
+        StringBuilder all = new StringBuilder();
+        all.append(product.getName()).append(" ").append(product.getSubName())
+                .append(" ").append(productType.getName())
+                .append(" ").append(brand.getName());
+
+        doc.setAll(all.toString());
+        doc.setProductTypeId(product.getProductTypeId());
+        doc.setBrandId(product.getBrandId());
+
+        //最高价格  最低价格
+        List<Sku> skus = skuMapper.selectList(new QueryWrapper<Sku>().eq("product_id", product.getId()));
+        Integer maxprice = 0;
+        Integer minprice = 0;
+        //默认第一个价格为最低的价格
+        if (skus!=null&&skus.size()>0){
+
+            minprice = skus.get(0).getPrice();
+        }
+        for (Sku sku : skus) {
+            if (sku.getPrice()>maxprice){
+                maxprice = sku.getPrice();
+            }
+            if (sku.getPrice()<minprice){
+                minprice = sku.getPrice();
+            }
+        }
+        doc.setMaxPrice(maxprice);
+        doc.setMinPrice(minprice);
+
+
+        doc.setSaleCount(product.getSaleCount());
+        doc.setOnSaleTime(product.getOnSaleTime());
+        doc.setCommentCount(product.getCommentCount());
+        doc.setViewCount(product.getViewCount());
+        doc.setName(product.getName());
+        doc.setSubName(product.getSubName());
+        doc.setMedias(product.getMedias());
+        doc.setViewProperties(product.getViewProperties());
+        doc.setSkuProperties(product.getSkuProperties());
+
+        return doc;
+
     }
 }

@@ -6,8 +6,8 @@ import cn.itsource.kuanggou.domain.Product;
 import cn.itsource.kuanggou.query.ProductQuery;
 import cn.itsource.kuanggou.util.AjaxResult;
 import cn.itsource.kuanggou.util.PageList;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.baomidou.mybatisplus.core.metadata.IPage;
+import cn.itsource.kuanggou.util.StrUtils;
+import cn.itsource.kuanggou.vo.SkusVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -123,4 +123,56 @@ public class ProductController {
     public List<Specification> getSkuProperties(@PathVariable("productId") Long productId){
         return productService.getSkuProperties(productId);
     }
+
+    /**
+     * 保存sku
+     * @return
+     */
+    @PostMapping("//updateSkuProperties")
+    public AjaxResult updateSkuProperties(@RequestParam("productId")Long productId,
+                                          @RequestBody SkusVO skusvo){
+
+        productService.saveSkuProperties(productId,skusvo.getSkuproperties(),skusvo.getSkus());
+
+        return AjaxResult.me();
+
+    }
+
+    /**
+     * 批量上架
+     * @param ids
+     * @return
+     */
+    @GetMapping("/onSale")
+    public AjaxResult onSale(@RequestParam("ids")String ids){
+        try {
+            List<Long> idList = StrUtils.splitStr2LongArr(ids);
+            productService.onSale(idList);
+            return AjaxResult.me().setMessage("上架成功!");
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return AjaxResult.me().setSuccess(false).setMessage("上架失败!"+e.getMessage());
+        }
+    }
+    /**
+     * 批量下架
+     * @param ids
+     * @return
+     */
+    @GetMapping("/offSale")
+    public AjaxResult offSale(@RequestParam("ids")String ids){
+
+        try {
+            List<Long> idList = StrUtils.splitStr2LongArr(ids);
+            productService.offSale(idList);
+            return AjaxResult.me().setMessage("下架成功!");
+
+        }catch (Exception e){
+            e.printStackTrace();
+            return AjaxResult.me().setSuccess(false).setMessage("下架失败!"+e.getMessage());
+        }
+    }
+
+
 }

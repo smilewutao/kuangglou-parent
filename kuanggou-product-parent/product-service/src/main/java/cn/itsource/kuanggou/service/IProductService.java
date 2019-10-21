@@ -7,6 +7,7 @@ import cn.itsource.kuanggou.util.PageList;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * <p>
@@ -28,4 +29,24 @@ public interface IProductService extends IService<Product> {
 
     //根据商品ID查询商品的sku属性
     List<Specification> getSkuProperties(Long productId);
+
+    /**
+     * 保存sku
+     * @param productId
+     * @param skuproperties
+     * @param skus
+     */
+    void saveSkuProperties(Long productId, List<Specification> skuproperties, List<Map<String, String>> skus);
+
+    /**
+     * 批量上架
+     * @param idList
+     */
+    void onSale(List<Long> idList);
+
+    /**
+     * 批量下架
+     * @param idList
+     */
+    void offSale(List<Long> idList);
 }

@@ -36,9 +36,36 @@
         </association>
     </resultMap>
 
+    <!--批量上架-->
+    <update id="onSale">
+        update t_product
+        set onSaleTime=#{onSaleTime},state=1
+        where id in
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </update>
+
+    <!--批量下架-->
+    <update id="offSale">
+        update t_product
+        set offSaleTime=#{offSaleTime},state=0
+        where id in
+        <foreach collection="ids" item="id" open="(" close=")" separator=",">
+            #{id}
+        </foreach>
+    </update>
+
+
     <update id="updateViewProperties">
         update t_product
         set viewProperties = #{viewProperties}
+        where id = #{productId}
+    </update>
+
+    <update id="updateSkuProperties">
+        update t_product
+        set skuProperties = #{skuProperties}
         where id = #{productId}
     </update>
 
