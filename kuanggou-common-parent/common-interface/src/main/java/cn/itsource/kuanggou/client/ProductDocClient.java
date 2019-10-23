@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import java.util.List;
 
 @FeignClient("KUANGGOU-COMMON")
+@Component
 public interface ProductDocClient {
     /**
      * 批量保存
