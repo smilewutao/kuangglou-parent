@@ -1,6 +1,7 @@
 package cn.itsource.kuanggou.service;
 
 import cn.itsource.kuanggou.domain.ProductType;
+import cn.itsource.kuanggou.vo.ProductTypeVo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
@@ -22,4 +23,11 @@ public interface IProductTypeService extends IService<ProductType> {
     List<ProductType> loadTypeTree();
 
     void genHomePage();
+
+    /**
+     * 加载面包屑
+     * @param productTypeId
+     * @return
+     */
+    List<ProductTypeVo> loadTypeCrumb(Long productTypeId);
 }

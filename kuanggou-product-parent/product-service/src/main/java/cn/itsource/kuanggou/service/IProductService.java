@@ -1,5 +1,6 @@
 package cn.itsource.kuanggou.service;
 
+import cn.itsource.kuanggou.client.domain.ProductParam;
 import cn.itsource.kuanggou.domain.Product;
 import cn.itsource.kuanggou.domain.Specification;
 import cn.itsource.kuanggou.query.ProductQuery;
@@ -49,4 +50,11 @@ public interface IProductService extends IService<Product> {
      * @param idList
      */
     void offSale(List<Long> idList);
+
+    /**
+     * 在线商城搜索商品
+     * @param param
+     * @return
+     */
+    PageList<Product> queryOnSale(ProductParam param);
 }

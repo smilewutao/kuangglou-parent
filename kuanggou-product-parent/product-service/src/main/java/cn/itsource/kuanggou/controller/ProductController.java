@@ -1,5 +1,6 @@
 package cn.itsource.kuanggou.controller;
 
+import cn.itsource.kuanggou.client.domain.ProductParam;
 import cn.itsource.kuanggou.domain.Specification;
 import cn.itsource.kuanggou.service.IProductService;
 import cn.itsource.kuanggou.domain.Product;
@@ -172,6 +173,16 @@ public class ProductController {
             e.printStackTrace();
             return AjaxResult.me().setSuccess(false).setMessage("下架失败!"+e.getMessage());
         }
+    }
+
+    /**
+     * 在线商城搜索商品
+     * @param param
+     * @return
+     */
+    @PostMapping("/queryOnSale")
+    public PageList<Product> queryOnSale(@RequestBody ProductParam param){
+        return productService.queryOnSale(param);
     }
 
 

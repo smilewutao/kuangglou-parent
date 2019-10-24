@@ -5,6 +5,7 @@ import cn.itsource.kuanggou.client.StaticPageClient;
 import cn.itsource.kuanggou.domain.ProductType;
 import cn.itsource.kuanggou.mapper.ProductTypeMapper;
 import cn.itsource.kuanggou.service.IProductTypeService;
+import cn.itsource.kuanggou.vo.ProductTypeVo;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
@@ -52,6 +53,7 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
         model.put("staticRoot","E:\\eee\\kuangglou-parent\\kuangglou-parent\\kuanggou-product-parent\\product-service\\src\\main\\resources\\");
         staticPageClient.generateStaticPage(templatePath,targetPath,model);
     }
+
 
     /**
      * 加载类型树
@@ -201,5 +203,51 @@ public class ProductTypeServiceImpl extends ServiceImpl<ProductTypeMapper, Produ
         redisClient.set("productTypes",productTypesStr);
         //生成home.html静态页面
         genHomePage();
+    }
+
+    /**
+     * 加载面包屑
+     * @param productTypeId
+     * @return
+     */
+    @Override
+    public List<ProductTypeVo> loadTypeCrumb(Long productTypeId) {
+
+        //根据当前类型查询所有父级别的类型
+        //当前类型
+        ProductType currentType = baseMapper.selectById(productTypeId);
+        String path = currentType.getPath();
+        //分割path
+        List<Long> ids = pathsplit(path);
+        //查询各个级别的类型
+        List<ProductType> productTypes = baseMapper.selectBatchIds(ids);
+        List<ProductTypeVo> result = new ArrayList<>();
+
+        //封装数据
+        ProductTypeVo vo = null;
+        for (ProductType productType : productTypes) {
+            vo = new ProductTypeVo();
+            vo.setCurrentType(productType);
+
+            //其他同级别的类型
+            List<ProductType> otherTypes = baseMapper.selectList(new QueryWrapper<ProductType>().eq("pid", productType.getPid()));
+
+            vo.setOtherTypes(otherTypes);
+            result.add(vo );
+        }
+
+        return result;
+    }
+
+    private List<Long> pathsplit(String path) {
+
+        String[] idArr = path.substring(1).split("\\.");
+        List<Long> idList = new ArrayList<>();
+
+        for (String s : idArr) {
+            idList.add(Long.parseLong(s) );
+        }
+        return idList;
+        
     }
 }

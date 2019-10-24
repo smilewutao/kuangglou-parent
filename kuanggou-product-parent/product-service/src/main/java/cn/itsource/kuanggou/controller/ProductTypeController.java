@@ -7,6 +7,7 @@ import cn.itsource.kuanggou.query.ProductTypeQuery;
 import cn.itsource.kuanggou.service.IProductTypeService;
 import cn.itsource.kuanggou.util.AjaxResult;
 import cn.itsource.kuanggou.util.PageList;
+import cn.itsource.kuanggou.vo.ProductTypeVo;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -111,5 +112,16 @@ public class ProductTypeController {
             e.printStackTrace();
             return AjaxResult.me().setSuccess(false).setMessage("失败!"+e.getMessage());
         }
+    }
+
+    /**
+     * 加载类型面包屑
+     * @param productTypeId
+     * @return
+     */
+    public List<ProductTypeVo> loadTypeCrumb(@RequestParam("productTypeId") Long productTypeId){
+
+        return productTypeService.loadTypeCrumb(productTypeId);
+
     }
 }
